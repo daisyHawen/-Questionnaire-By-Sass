@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*section1部分*/
+#section-1 {
+    background: #EFEFEF;
+    height: 100%;
+    overflow: hidden;
+}
+
+#section-1 table {
+    margin: 0 auto;
+    width: 75%;
+    border-spacing: 0;
+}
+
+#section-1 table tbody {
+    background: #fff;
+    margin-top: 100px;
+    display: block;
+}
+
+#section-1 table tr {
+    height: 50px;
+}
+
+#section-1 table td,
+th {
+    width: 18%;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+}
+
+#section-1 td:first-child {
+    text-indent: 3em;
+}
+
+#section-1 td:last-child,
+#section-1 th:last-child {
+    width: 300px;
+}
+
+/*modal层制作*/
+.cover{
+    position: absolute;
+    background-color: #8F8F8F;
+    height: 110%;
+    width: 100%;
+    left:0px;
+    top:0px;
+    opacity: 0.5;
+    /*display: none;*/
+    z-index: 2;
+}
+.modal{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 180px;
+    /*margin-left:auto;*/
+    /*margin-right: auto;*/
+    left:38%;
+    top:38%;
+    z-index: 3;
+}
+.modal-tittle{
+    background: #F7F7F7;
+    height: 40px;
+    line-height: 40px;
+    color: #555555;
+    font-size:15px;
+    text-indent: 2em;
+}
+.modal-message{
+    text-align: center;
+    height: 80px;
+    line-height: 100px;
+}
+.modla-action{
+text-align: center;
+}

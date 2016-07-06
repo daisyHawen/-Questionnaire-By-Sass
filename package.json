@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "index.js",
+  "scripts": {
+    "test": "echo\"ERROR:no test specified\"&&exit 1"
+  },
+  "author": "",
+  "licence": "ISC",
+  "dependencies": {
+    "echarts": "^3.1.10"
+  }
+}

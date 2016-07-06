@@ -1,0 +1,227 @@
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin margin10{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.section-2 {
+    background: #EFEFEF;
+    // height: 120%;
+    width: 100%;
+    position: absolute;
+    // overflow:hidden;
+}
+
+.sec2-content {
+    width: 75%;
+    background: #fff;
+    margin-bottom:20px;
+    // height: 100%;
+    @include center;
+    h1 {
+        @include text-center;
+        margin-top: 10px;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        font-size: 20px;
+        display: block;
+        text-indent: 0;
+    }
+    .sec2-h2 {
+        height: 20px;
+        line-heigh: 20px;
+        display: block;
+        font-size: 15px;
+        @include text-center;
+    }
+}
+
+.section-2 {
+    .box {
+        text-align: left;
+        width: 80%;
+        height: 150px;
+        border: 1px solid #CCC;
+        margin: 20px auto;
+    }
+    li {
+        list-style-type: none;
+    }
+    .sec2-btn {
+        @include text-center;
+        button {
+            margin-top: 20px;
+        }
+    .btn-yellow{
+        margin-bottom:20px;
+    }
+    }
+}
+
+.box-sig-text {
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.box-sig-chap {
+    float: right;
+    width: 50%;
+    height: 150px;
+}
+
+.box-mul-text {
+    @extend .box-sig-text;
+}
+
+.box-mul-chap {
+    @extend .box-sig-chap;
+}
+
+.box-text-text {
+    @extend .box-sig-text;
+}
+
+.box-text-chap {
+    @extend .box-sig-chap;
+}
+
+.box-sig-text-tittle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.box-mul-text-tittle {
+    @extend .box-sig-text-tittle;
+}
+
+.box-text-text-tittle {
+    @extend .box-sig-text-tittle;
+}
+
+.box-sig-text-option {
+    margin-left: 28px;
+    margin-bottom: 10px;
+}
+
+.box-mul-text-option {
+    @extend .box-sig-text-option;
+}
+
+/*section3 部分——add_new.html*/
+.section-3 {
+    @extend .section-2;
+}
+
+.sec3-tip {
+    @extend .sec2-content;
+    @include text-center;
+    height: 200px;
+    line-height: 200px;
+    margin-top: 50px;
+}
+
+.sec3-add {
+    @extend .sec2-content;
+    h1 {
+        @include text-center;
+        margin-top: 10px;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        font-size: 20px;
+        display: block;
+        text-indent: 0;
+    }
+    .sec3-tip-content {
+        background: #EFEFEF;
+        width:90%;
+        height:100px;
+        @include center;
+        @include text-center;
+        @include margin10;
+        line-height:100px;
+        a{
+            color:#555;
+        }
+    }
+    .sec3-tip-action{
+        @include margin10;
+        height:50px;
+    }
+    .action-cal{
+    @extend .box-sig-text;
+    margin-left:50px;
+    }
+    .action-btns{
+        width:150px;
+        @extend .box-sig-chap;
+    }
+    a{
+            color:#555;
+        }
+    li,textarea{
+        margin-left:50px;
+    }
+    li{
+        height:35px;
+        line-height:35px;
+    }
+    textarea{
+        margin-top:10px;
+    }
+    .sec3-q-head{
+        font-size:16px;
+        margin-left:25px;
+        margin-top:10px;
+    }
+}
+
+/*modal层制作*/
+.cover{
+    position: absolute;
+    background-color: #8F8F8F;
+    height: 130%; //到时候用js调整吧
+    width: 100%;
+    left:0px;
+    top:0px;
+    opacity: 0.5;
+    /*display: none;*/
+    z-index: 2;
+}
+/*弹出窗*/
+.modal{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 180px;
+    left:38%;
+    top:38%;
+    z-index: 3;
+}
+.modal-tittle{
+    background: #F7F7F7;
+    height: 40px;
+    line-height: 40px;
+    color: #555555;
+    font-size:15px;
+    text-indent: 2em;
+}
+.modal-message{
+    text-align: center;
+    height: 80px;
+    line-height: 30px;
+}
+.modla-action{
+text-align: center;
+}

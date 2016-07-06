@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>查看数据</title>
+    <link rel="stylesheet" href="css/section2.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>调查问卷</h1>
+        <div id="header-h2"><a href="">我的问卷</a></div>
+    </header>
+    <section class="section-2">
+        <div class="sec2-content">
+            <div>
+                <h1 class="sec2-h1">这里是标题</h1>
+                <p class="sec2-h2">此统计只包含完整回收的数据</p>
+                <hr>
+            </div>
+            <div class="box box-sig">
+                <div class='box-sig-text'>
+                    <p class='box-sig-text-tittle'>Q1 单选题</p>
+                    <ul class='box-sig-text-option'>
+                        <li>选项一</li>
+                        <li>选项二</li>
+                    </ul>
+                </div>
+                <div class="box-sig-chap" id="chart1"></div>
+            </div>
+            <div class="box box-mul">
+                <div class="box-mul-text">
+                    <p class='box-mul-text-tittle'>Q2 单选题</p>
+                    <ul class="box-mul-text-option">
+                        <li>选项一</li>
+                        <li>选项二</li>
+                        <li>选项三</li>
+                    </ul>
+                </div>
+                <div id='chart2' class="box-mul-chap"></div>
+
+            </div>
+            <div class="box box-text">
+                <div class="box-text-text">
+                    <p class='box-mul-text-tittle'>Q3 文本题</p>
+                </div>
+                <div class="box-text-chap" id="chart3"></div>
+            </div>
+            <hr>
+            <div class="sec2-btn">
+                <button class="btn-yellow">返回</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../dist/echarts.common.min.js"></script>
+<script src="js/data.js"></script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>新建问卷页</title>
+    <link rel="stylesheet" href="css/section2.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>调查问卷</h1>
+        <div id="header-h2"><a href="">我的问卷</a></div>
+    </header>
+    <section class="section-3">
+        <div class="sec3-tip" style="display:none">
+            <button class="btn-yellow">新建问卷 </button>
+        </div>
+        <div class="sec3-add">
+            <h1 class="sec3-tip-tittle">    这里是标题</h1>
+            <hr>
+            
+            <div class="sec3-q-sig">
+                <h2 class="sec3-q-head">Q1 单选题</h2>
+                <li>
+                    <input type="radio" name="sig-choice-1">
+                    <a href="">选项一</a>
+                </li>
+                <li>
+                    <input type="radio" name="sig-choice-1">
+                    <a href="">选项二</a>
+                </li>
+                <li>
+                    <input type="radio" name="sig-choice-1">
+                    <a href="">选项三</a>
+                </li>
+                <li class="q-sig-act" style="display:none"></li>
+            </div>
+            <div class="sec3-q-sig">
+                <h2 class="sec3-q-head">Q2 多选题</h2>
+                <li>
+                    <input type="checkbox" name="smul-choice-1">
+                    <a href="">选项一</a>
+                </li>
+                <li>
+                    <input type="checkbox" name="mul-choice-1">
+                    <a href="">选项二</a>
+                </li>
+                <li>
+                    <input type="checkbox" name="mul-choice-1">
+                    <a href="">选项三</a>
+                </li>
+                <li class="q-sig-act" style="display:none"></li>
+            </div>
+            <div class="sec3-q-sig">
+                <h2 class="sec3-q-head">Q3 文本题</h2>
+                <textarea name="text-1" id="" cols="80" rows="10"></textarea>
+                <li class="q-sig-act" style="display:none"></li>
+            </div>
+            <hr>
+            <div class="sec3-tip-content" >
+                <a href="">添加问题</a>
+            </div>
+            <hr>
+            <div class="sec3-tip-action">
+                <div class="action-cal">
+                    问卷截止时间
+                    <input type="text">
+                </div>
+                <div class="action-btns">
+                    <button class="btn-default">保存问卷</button>
+                    <button class="btn-default">发布问卷</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cover" style="display:block">
+    </section>
+    <section class="modal" style="display:block">
+        <h2 class="modal-tittle">
+         提示 
+        </h2>
+        <p class="modal-message">是否发布问卷？
+        <br>（此卷的截止日期是2016-6-12）
+        </p>
+        <div class="modla-action ">
+            <button class="btn-default active">确认</button>
+            <button class="btn-default ">取消</button>
+        </div>
+    </section>
+</body>
+
+</html>

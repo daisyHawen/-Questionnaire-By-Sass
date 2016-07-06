@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.section-2, .section-3 {
+  background: #EFEFEF;
+  width: 100%;
+  position: absolute; }
+
+.sec2-content, .sec3-tip, .sec3-add {
+  width: 75%;
+  background: #fff;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  .sec2-content h1, .sec3-tip h1, .sec3-add h1 {
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    text-indent: 0; }
+  .sec2-content .sec2-h2, .sec3-tip .sec2-h2, .sec3-add .sec2-h2 {
+    height: 20px;
+    line-heigh: 20px;
+    display: block;
+    font-size: 15px;
+    text-align: center; }
+
+.section-2 .box, .section-3 .box {
+  text-align: left;
+  width: 80%;
+  height: 150px;
+  border: 1px solid #CCC;
+  margin: 20px auto; }
+
+.section-2 li, .section-3 li {
+  list-style-type: none; }
+
+.section-2 .sec2-btn, .section-3 .sec2-btn {
+  text-align: center; }
+  .section-2 .sec2-btn button, .section-3 .sec2-btn button {
+    margin-top: 20px; }
+  .section-2 .sec2-btn .btn-yellow, .section-3 .sec2-btn .btn-yellow {
+    margin-bottom: 20px; }
+
+.box-sig-text, .box-mul-text, .box-text-text, .sec3-add .action-cal {
+  width: 50%;
+  height: 150px;
+  float: left; }
+
+.box-sig-chap, .box-mul-chap, .box-text-chap, .sec3-add .action-btns {
+  float: right;
+  width: 50%;
+  height: 150px; }
+
+.box-sig-text-tittle, .box-mul-text-tittle, .box-text-text-tittle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px; }
+
+.box-sig-text-option, .box-mul-text-option {
+  margin-left: 28px;
+  margin-bottom: 10px; }
+
+/*section3 部分——add_new.html*/
+.sec3-tip {
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  margin-top: 50px; }
+
+.sec3-add h1 {
+  text-align: center;
+  margin-top: 10px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 20px;
+  display: block;
+  text-indent: 0; }
+
+.sec3-add .sec3-tip-content {
+  background: #EFEFEF;
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 100px; }
+  .sec3-add .sec3-tip-content a {
+    color: #555; }
+
+.sec3-add .sec3-tip-action {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px; }
+
+.sec3-add .action-cal {
+  margin-left: 50px; }
+
+.sec3-add .action-btns {
+  width: 150px; }
+
+.sec3-add a {
+  color: #555; }
+
+.sec3-add li, .sec3-add textarea {
+  margin-left: 50px; }
+
+.sec3-add li {
+  height: 35px;
+  line-height: 35px; }
+
+.sec3-add textarea {
+  margin-top: 10px; }
+
+.sec3-add .sec3-q-head {
+  font-size: 16px;
+  margin-left: 25px;
+  margin-top: 10px; }
+
+/*modal层制作*/
+.cover {
+  position: absolute;
+  background-color: #8F8F8F;
+  height: 130%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  /*display: none;*/
+  z-index: 2; }
+
+/*弹出窗*/
+.modal {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 180px;
+  left: 38%;
+  top: 38%;
+  z-index: 3; }
+
+.modal-tittle {
+  background: #F7F7F7;
+  height: 40px;
+  line-height: 40px;
+  color: #555555;
+  font-size: 15px;
+  text-indent: 2em; }
+
+.modal-message {
+  text-align: center;
+  height: 80px;
+  line-height: 30px; }
+
+.modla-action {
+  text-align: center; }
